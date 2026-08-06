@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #FF902B;
+    --secondary-color: #2F2105;
+    --accents: #F9D9AA;
+    --smoke-color: #9F9F9F;
+}
+
+/* Poppins Regular */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Poppins Medium */
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Poppins Semibold */
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Poppins Bold */
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Dynalight Regular */
+.dynalight-regular {
+    font-family: "Dynalight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}

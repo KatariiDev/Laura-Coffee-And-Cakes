@@ -32,7 +32,10 @@
                 <div class="h-container__nav-title poppins-regular"><a href="#">About us</a></div>
             </div>
             <div class="h-container__util">
-                <div class="h-container__util--search">
+                <div class="mobile__display mobile__display--glass">
+                    <img src="./assets/img/home/mag-glass.png" alt="" class="mag-glass" id="search-icon">
+                </div>
+                <div class="h-container__util--search" id="search-box">
                     <img src="./assets/img/home/mag-glass.png" alt="" class="mag-glass">
                     <input type="text" placeholder="Cappuccino" class="poppins-regular">
                 </div>
@@ -41,6 +44,34 @@
                 </div>
                 <div class="h-container__util--cart">
                     <img src="./assets/img/home/cart.png" alt="" class="cart">
+                </div>
+                <div class="h-container__util--menu">
+                    <div>
+                        <img src="./assets/img/home/menu.png" alt="" class="menu">
+                    </div>
+                    <div class="menu__display">
+                        <div class="menu__nav">
+                            <div class="menu__nav--section poppins-semibold">
+                                <a href="./index.html">Home</a>
+                            </div>
+                            <hr>
+                            <div class="menu__nav--section poppins-semibold">
+                                <a href="#">Menu</a>
+                            </div>
+                            <hr>
+                            <div class="menu__nav--section poppins-semibold">
+                                <a href="#">About us</a>
+                            </div>
+                            <hr class="mobile__display">
+                            <div class="menu__nav--section mobile__display poppins-semibold">
+                                <a href="">Cart</a>
+                            </div>
+                            <hr class="mobile__display">
+                            <div class="menu__nav--section mobile__display poppins-semibold">
+                                <a href="">Sign-in</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,86 +119,90 @@
         <section class="m-container">
             <div class="m-container__popular">
                 <div class="m-container__popular--title poppins-semibold">Popular <span>Now</span></div>
-                <div class="m-container__popular--line">
-                    <div class="col__blur">
-                        <div class="line__col">
-                            <div class="line__col--row1">
-                                <img src="./assets/img/home/m-section1/vanilla-latte.png" alt="">
-                                <div class="rate__blur">
-                                    <div class="row1--rate poppins-bold">
-                                        4.8
-                                        <img src="./assets/img/home/star.png" alt="">
+                <div class="m-container__popular--line slider">
+                    <div class="slider-track">
+                        <div class="col__blur">
+                            <div class="line__col">
+                                <div class="line__col--row1">
+                                    <img src="./assets/img/home/m-section1/vanilla-latte.png" alt="">
+                                    <div class="rate__blur">
+                                        <div class="row1--rate poppins-bold">
+                                            4.8
+                                            <img src="./assets/img/home/star.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="line__col--row2">
-                                <div class="row2--name poppins-semibold">Vanilla Latte</div>
-                                <div class="row2--price poppins-bold">21.000đ</div>
-                            </div>
-                            <div class="line__col--row3">
-                                <div class="row3__tag">
-                                    <div class="row3__tag--type poppins-semibold">Hot</div>
-                                    <div class="row3__tag--type poppins-semibold">Cold</div>
+                                <div class="line__col--row2">
+                                    <div class="row2--name poppins-semibold">Vanilla Latte</div>
+                                    <div class="row2--price poppins-bold">21.000đ</div>
                                 </div>
-                                <div class="row3__cart">
-                                    <img src="./assets/img/home/big-white-cart.png" alt="" class="row3__cart--img">
+                                <div class="line__col--row3">
+                                    <div class="row3__tag">
+                                        <div class="row3__tag--type poppins-semibold">Hot</div>
+                                        <div class="row3__tag--type poppins-semibold">Cold</div>
+                                    </div>
+                                    <div class="row3__cart">
+                                        <img src="./assets/img/home/big-white-cart.png" alt="" class="row3__cart--img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col__blur">
-                        <div class="line__col">
-                            <div class="line__col--row1">
-                                <img src="./assets/img/home/m-section1/espresso.png" alt="">
-                                <div class="rate__blur">
-                                    <div class="row1--rate poppins-bold">
-                                        4.8
-                                        <img src="./assets/img/home/star.png" alt="">
+                        <div class="col__blur">
+                            <div class="line__col">
+                                <div class="line__col--row1">
+                                    <img src="./assets/img/home/m-section1/espresso.png" alt="">
+                                    <div class="rate__blur">
+                                        <div class="row1--rate poppins-bold">
+                                            4.8
+                                            <img src="./assets/img/home/star.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="line__col--row2">
-                                <div class="row2--name poppins-semibold">Espresso</div>
-                                <div class="row2--price poppins-bold">12.000đ</div>
-                            </div>
-                            <div class="line__col--row3">
-                                <div class="row3__tag">
-                                    <div class="row3__tag--type poppins-semibold">Hot</div>
-                                    <div class="row3__tag--type poppins-semibold">Cold</div>
+                                <div class="line__col--row2">
+                                    <div class="row2--name poppins-semibold">Espresso</div>
+                                    <div class="row2--price poppins-bold">12.000đ</div>
                                 </div>
-                                <div class="row3__cart">
-                                    <img src="./assets/img/home/big-white-cart.png" alt="" class="row3__cart--img">
+                                <div class="line__col--row3">
+                                    <div class="row3__tag">
+                                        <div class="row3__tag--type poppins-semibold">Hot</div>
+                                        <div class="row3__tag--type poppins-semibold">Cold</div>
+                                    </div>
+                                    <div class="row3__cart">
+                                        <img src="./assets/img/home/big-white-cart.png" alt="" class="row3__cart--img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col__blur">
-                        <div class="line__col">
-                            <div class="line__col--row1">
-                                <img src="./assets/img/home/m-section1/hazelnut-latte.png" alt="">
-                                <div class="rate__blur">
-                                    <div class="row1--rate poppins-bold">
-                                        4.8
-                                        <img src="./assets/img/home/star.png" alt="">
+                        <div class="col__blur">
+                            <div class="line__col">
+                                <div class="line__col--row1">
+                                    <img src="./assets/img/home/m-section1/hazelnut-latte.png" alt="">
+                                    <div class="rate__blur">
+                                        <div class="row1--rate poppins-bold">
+                                            4.8
+                                            <img src="./assets/img/home/star.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="line__col--row2">
-                                <div class="row2--name poppins-semibold">Hazelnut Latte</div>
-                                <div class="row2--price poppins-bold">23.000đ</div>
-                            </div>
-                            <div class="line__col--row3">
-                                <div class="row3__tag">
-                                    <div class="row3__tag--type poppins-semibold">Hot</div>
-                                    <div class="row3__tag--type poppins-semibold">Cold</div>
+                                <div class="line__col--row2">
+                                    <div class="row2--name poppins-semibold">Hazelnut Latte</div>
+                                    <div class="row2--price poppins-bold">23.000đ</div>
                                 </div>
-                                <div class="row3__cart">
-                                    <img src="./assets/img/home/big-white-cart.png" alt="" class="row3__cart--img">
+                                <div class="line__col--row3">
+                                    <div class="row3__tag">
+                                        <div class="row3__tag--type poppins-semibold">Hot</div>
+                                        <div class="row3__tag--type poppins-semibold">Cold</div>
+                                    </div>
+                                    <div class="row3__cart">
+                                        <img src="./assets/img/home/big-white-cart.png" alt="" class="row3__cart--img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <button class="prev mobile__display">❮</button>
+                <button class="next mobile__display">❯</button>
             </div>
         </section>
         <section class="m-container">
@@ -221,13 +256,13 @@
                 <img src="./assets/img/home/m-section3/Exclude.png" alt="">
                 <div class="special__container">
                     <div class="m-container__special--title poppins-semibold">Special menu <span>for you</span></div>
-                    <div class="m-container__special--rcm">
-                        <div class="special__blur">
+                    <div class="slider m-container__special--rcm">
+                        <div class="slide special__blur">
                             <div class="special__box">
                                 <div class="special__row1">
                                     <img src="./assets/img/home/m-section3/sandwich.png" alt="">
                                     <div class="special__blur--rate">
-                                        <div class="special--rate">
+                                        <div class="special--rate poppins-bold">
                                             4.8
                                             <img src="./assets/img/home/star.png" alt="">
                                         </div>
@@ -245,12 +280,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="special__blur">
+                        <div class="slide special__blur">
                             <div class="special__box">
                                 <div class="special__row1">
                                     <img src="./assets/img/home/m-section3/hot-milk.png" alt="">
                                     <div class="special__blur--rate">
-                                        <div class="special--rate">
+                                        <div class="special--rate poppins-bold">
                                             4.8
                                             <img src="./assets/img/home/star.png" alt="">
                                         </div>
@@ -268,12 +303,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="special__blur">
+                        <div class="slide special__blur">
                             <div class="special__box">
                                 <div class="special__row1">
                                     <img src="./assets/img/home/m-section3/coffee-ice-cream.png" alt="">
                                     <div class="special__blur--rate">
-                                        <div class="special--rate">
+                                        <div class="special--rate poppins-bold">
                                             4.8
                                             <img src="./assets/img/home/star.png" alt="">
                                         </div>
@@ -284,19 +319,19 @@
                                     <div class="special--price poppins-bold">12.000đ</div>
                                 </div>
                                 <div class="special__row3">
-                                    <div class="special--desc poppins-semibold">Coffe with ice cream vanilla</div>
+                                    <div class="special--desc poppins-semibold">Coffee with ice cream vanilla</div>
                                     <div class="special--cart">
                                         <img src="./assets/img/home/big-white-cart.png" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="special__blur">
+                        <div class="slide special__blur">
                             <div class="special__box">
                                 <div class="special__row1">
                                     <img src="./assets/img/home/m-section3/cappuccino.png" alt="">
                                     <div class="special__blur--rate">
-                                        <div class="special--rate">
+                                        <div class="special--rate poppins-bold">
                                             4.8
                                             <img src="./assets/img/home/star.png" alt="">
                                         </div>
@@ -314,12 +349,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="special__blur">
+                        <div class="slide special__blur">
                             <div class="special__box">
                                 <div class="special__row1">
                                     <img src="./assets/img/home/m-section3/moccaccino.png" alt="">
                                     <div class="special__blur--rate">
-                                        <div class="special--rate">
+                                        <div class="special--rate poppins-bold">
                                             4.8
                                             <img src="./assets/img/home/star.png" alt="">
                                         </div>
@@ -337,19 +372,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="special__blur">
+                        <div class="slide special__blur">
                             <div class="special__box">
                                 <div class="special__row1">
                                     <img src="./assets/img/home/m-section3/waffle-ice-cream.png" alt="">
                                     <div class="special__blur--rate">
-                                        <div class="special--rate">
+                                        <div class="special--rate poppins-bold">
                                             4.8
                                             <img src="./assets/img/home/star.png" alt="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="special__row2">
-                                    <div class="special--name poppins-semibold">Waffle Ice Crem</div>
+                                    <div class="special--name poppins-semibold">Waffle Ice Cream</div>
                                     <div class="special--price poppins-bold">12.000đ</div>
                                 </div>
                                 <div class="special__row3">
@@ -380,7 +415,58 @@
         </section>
     </main>
     <footer>
-
+        <div class="f-container">
+            <div class="f-container-ch">
+                <section class="f-container__section">
+                    <div class="f-section__box">
+                        <div class="f-section__box--band dynalight-regular">Laura Coffee</div>
+                        <div class="f-section__box--address poppins-regular">
+                            12 Nguyễn Văn Bảo, Phường Hạnh Thông, Quận Gò Vấp, Thành phố Hồ Chí Minh
+                        </div>
+                    </div>
+                    <div class="f-section__box">
+                        <div class="f-section__col">
+                            <div class="f-section__box--content poppins-medium">Links</div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="poppins-medium">Home</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="poppins-medium">Menu</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="poppins-medium">About us</a>
+                            </div>
+                        </div>
+                        <div class="f-section__col">
+                            <div class="f-section__box--content poppins-medium">Help</div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="poppins-medium">Payment Options</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="poppins-medium">Returns</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="poppins-medium">Privacy Policies</a>
+                            </div>       
+                        </div>
+                        <div class="f-section__col">
+                            <div class="f-section__box--content poppins-medium">Newsietter</div>
+                            <div class="f-section__box--input">
+                                <input class="poppins-regular" type="text" placeholder="Enter Your Email Address">
+                                <input class="poppins-semibold" type="button" value="SUBCRIBE">
+                            </div>
+                        </div>                 
+                    </div>
+                </section>
+                <hr>
+                <section class="f-container__section poppins-regular">
+                    2026 Laura Coffee. All rights reverved
+                </section>
+            </div>
+        </div>
     </footer>    
 </body>
+
+<script src="./assets/js/main.js"></script>
+
 </html>

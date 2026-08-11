@@ -26,3 +26,13 @@ document.querySelector('.prev').addEventListener('click', () => {
 //     searchBox.style.display = 'none';
 // }
 // });
+
+//Check Sign-in when order
+let products = [];
+
+fetch("./assets/json/products.json")
+    .then(response => response.json())
+    .then(products => {
+        const cards = document.querySelectorAll(".")
+
+    })    

@@ -15,14 +15,14 @@ document.querySelector('.prev').addEventListener('click', () => {
 });
 
 // Click search hidden
-const searchIcon = document.getElementById('search-icon');
-const searchBox = document.getElementById('search-box');
+// const searchIcon = document.getElementById('search-icon');
+// const searchBox = document.getElementById('search-box');
 
-searchIcon.addEventListener('click', () => {
-if (searchBox.style.display === 'none' || searchBox.style.display === '') {
-    searchBox.style.display = 'flex'
-//   searchIcon.style.display = 'none';
-} else {
-    searchBox.style.display = 'none';
-}
-});
+// searchIcon.addEventListener('click', () => {
+// if (searchBox.style.display === 'none' || searchBox.style.display === '') {
+//     searchBox.style.display = 'flex'
+// //   searchIcon.style.display = 'none';
+// } else {
+//     searchBox.style.display = 'none';
+// }
+// });

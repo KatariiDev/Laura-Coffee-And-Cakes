@@ -158,5 +158,101 @@
         "price": "55000đ",
         "s_description": "Creamy steamed milk with premium Japanese matcha.",
         "l_description": "A comforting beverage made by whisking authentic Japanese matcha green tea powder with rich, smoothly steamed milk, available hot or iced."
-    }     
+    },
+    {
+        "id": 21,
+        "name": "Laura Coffee Nam Linh Chi",
+        "category": "Coffee",
+        "price": "100000đ",
+        "s_description": "",
+        "l_description": ""
+    },
+    {
+        "id": 22,
+        "name": "Laura Coffee Dong Trung Ha Thao",
+        "category": "Coffee",
+        "price": "100000đ",
+        "s_description": "",
+        "l_description": ""
+    },
+    {
+        "id": 23,
+        "name": "Butter Croissant",
+        "category": "Pastry",
+        "price": "35000đ",
+        "s_description": "Flaky, golden French pastry with rich butter flavor.",
+        "l_description": "A classic French crescent-shaped pastry baked to golden perfection, featuring thin, flaky layers with a rich and aromatic butter taste."
+    },
+    {
+        "id": 24,
+        "name": "Chocolate Croissant",
+        "category": "Pastry",
+        "price": "39000đ",
+        "s_description": "Flaky buttery pastry filled with sweet dark chocolate.",
+        "l_description": "Traditional Pain au Chocolat made with buttery laminated dough wrapped around a core of rich, premium dark chocolate bars."
+    },
+    {
+        "id": 25,
+        "name": "Tiramisu",
+        "category": "Cake",
+        "price": "45000đ",
+        "s_description": "Classic Italian coffee-flavored dessert cake.",
+        "l_description": "An elegant Italian dessert featuring layers of espresso-soaked ladyfingers and a velvety, rich mascarpone cream, dusted with premium cocoa powder."
+    },
+    {
+        "id": 26,
+        "name": "New York Cheesecake",
+        "category": "Cake",
+        "price": "49000đ",
+        "s_description": "Rich, dense, and creamy vanilla cheesecake.",
+        "l_description": "A classic dense and smooth cream cheese cake baked on a sweet graham cracker crust, delivering a perfect balance of sweet and tangy flavors."
+    },
+    {
+        "id": 27,
+        "name": "Green Tea Mousse",
+        "category": "Cake",
+        "price": "45000đ",
+        "s_description": "Light and airy mousse cake with Japanese matcha.",
+        "l_description": "A delicate and feather-light dessert layering fluffy sponge cake with a smooth, vibrant mousse made from authentic Japanese matcha green tea."
+    },
+    {
+        "id": 28,
+        "name": "Red Velvet Cake",
+        "category": "Cake",
+        "price": "45000đ",
+        "s_description": "Vibrant red cocoa cake with smooth cream cheese.",
+        "l_description": "A striking and elegant layered cake with a soft cocoa flavor and a signature crimson color, frosted with a rich, tangy cream cheese icing."
+    },
+    {
+        "id": 29,
+        "name": "Salted Egg Sponge Cake",
+        "category": "Savory",
+        "price": "39000đ",
+        "s_description": "Soft sponge cake with savory salted egg and pork floss.",
+        "l_description": "A popular Vietnamese savory-sweet treat featuring a fluffy sponge cake base topped with rich salted egg yolks, savory pork floss, and a creamy sauce."
+    },
+    {
+        "id": 30,
+        "name": "Almond Danish",
+        "category": "Pastry",
+        "price": "39000đ",
+        "s_description": "Sweet flaky pastry topped with toasted sliced almonds.",
+        "l_description": "A puff pastry ring filled with sweet frangipane almond cream, baked until crisp and decorated with a generous crunch of toasted sliced almonds."
+    },
+    {
+        "id": 31,
+        "name": "Garlic Butter Bread",
+        "category": "Savory",
+        "price": "35000đ",
+        "s_description": "Toasted bread soaked in rich garlic butter and herbs.",
+        "l_description": "A comforting savory snack made from freshly baked bun scored and soaked in an aromatic blend of melted butter, minced garlic, and sweet parsley herbs."
+    },
+    {
+        "id": 32,
+        "name": "Chocolate Brownie",
+        "category": "Cake",
+        "price": "39000đ",
+        "s_description": "Dense, fudgy chocolate square with a crinkly top.",
+        "l_description": "A rich and decadent baked chocolate dessert with a dense, fudgy interior, loaded with chocolate chunks and finished with a classic crinkly crust."
+    }
 ]

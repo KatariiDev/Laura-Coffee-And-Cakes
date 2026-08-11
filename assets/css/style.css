@@ -548,6 +548,7 @@ main {
     justify-content: center;
     align-items: center;
     /* margin-right: 18px; */
+    border: none;
 }
 
 /* Main Section 2 */
@@ -1363,6 +1364,11 @@ footer {
         padding: 10px;
         }
 
-    button.prev { left: 10px; }
-    button.next { right: 10px; }
+    button.prev {
+        left: 10px; 
+    }
+
+    button.next {
+        right: 10px; 
+    }
 }

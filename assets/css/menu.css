@@ -127,54 +127,83 @@ header {
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 24px;
+    gap: 40px;
+    padding: 20px 24px;
+}
 
-}
-.wrap .wrap-left {
+.filter-label {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 25px;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1C1C1C;
+    white-space: nowrap;
 }
-.wrap-left .line {
-    width: 2px;
-    height: 37px;
-    background-color: gray;
-}
-.wrap-left p {
-    font-weight: 400;
-    font-size: 16px
-}
-.wrap .wrap-right {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-}
-.wrap-right .item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
 
+.filter-dropdown {
+    position: relative;
 }
-.item p {
-    font-weight: 400;
-    font-size: 20px;
-}
-.item .quantity {
-    width: 55px;
-    height: 55px;
-    border-radius: 5px;
+
+.filter-dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #9F9F9F;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    color: #7E7D7A;
+    white-space: nowrap;
+    transition: box-shadow 0.2s ease;
 }
-#sort {
-    width: 188px;
+.filter-dropdown-btn:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.filter-dropdown.active .filter-dropdown-btn {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.filter-dropdown.active .filter-dropdown-btn svg {
+    transform: rotate(180deg);
+}
+.filter-dropdown-btn svg {
+    transition: transform 0.25s ease;
+}
+
+.filter-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    min-width: 100%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    z-index: 100;
+    overflow: hidden;
+}
+.filter-dropdown.active .filter-dropdown-menu {
+    display: block;
+    animation: dropdownFadeIn 0.2s ease;
+}
+@keyframes dropdownFadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.filter-dropdown-item {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+.filter-dropdown-item:hover {
+    background: #FFF3E0;
+    color: #FF902B;
 }
 .section3-menu {
     display: flex;

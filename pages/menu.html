@@ -54,25 +54,92 @@
     <main>
         <div class="section2-filter">
             <div class="wrap">
-                <div class="wrap-left">
-                    <img src="/assets/img/icon-section2/Group 57.svg" alt="">
-                    <img src="/assets/img/icon-section2/ci_grid-big-round.svg" alt="">
-                    <img src="/assets/img/icon-section2/bi_view-list.svg" alt="">
-                    <div class="line"></div>
-                    <p>Showing 1–12 of 36 results</p>
+                <div class="filter-label">
+                    <span>Filter</span>
                 </div>
-                <div class="wrap-right">
-                    <div class="item">
-                        <p>Show</p>
-                        <div class="quantity" id="quantity">12</div>
+
+                <div class="filter-dropdown" id="filterProductType">
+                    <button class="filter-dropdown-btn" onclick="toggleDropdown('filterProductType')">
+                        <span>Product type</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#9F9F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="filter-dropdown-menu">
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">Coffee</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">Cake</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">Pastry</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">Drink</div>
                     </div>
-                    <div class="item">
-                        <p>Sort by</p>
-                        <div class="quantity" id="sort">Default</div>
+                </div>
+
+                <div class="filter-dropdown" id="filterCategory">
+                    <button class="filter-dropdown-btn" onclick="toggleDropdown('filterCategory')">
+                        <span>Category</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#9F9F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="filter-dropdown-menu">
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">Hot</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">Cold</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">Blended</div>
+                    </div>
+                </div>
+
+                <div class="filter-dropdown" id="filterPriceRange">
+                    <button class="filter-dropdown-btn" onclick="toggleDropdown('filterPriceRange')">
+                        <span>Price range</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#9F9F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="filter-dropdown-menu">
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">Under 20K</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">20K - 50K</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">50K - 100K</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">Over 100K</div>
+                    </div>
+                </div>
+
+                <div class="filter-dropdown" id="filterEvaluate">
+                    <button class="filter-dropdown-btn" onclick="toggleDropdown('filterEvaluate')">
+                        <span>Evaluate</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#9F9F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="filter-dropdown-menu">
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">5 stars</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">4 stars & up</div>
+                        <div class="filter-dropdown-item" onclick="selectFilter(this)">3 stars & up</div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            function toggleDropdown(id) {
+                const allDropdowns = document.querySelectorAll('.filter-dropdown');
+                allDropdowns.forEach(d => {
+                    if (d.id !== id) d.classList.remove('active');
+                });
+                document.getElementById(id).classList.toggle('active');
+            }
+
+            function selectFilter(item) {
+                const dropdown = item.closest('.filter-dropdown');
+                const btnText = dropdown.querySelector('.filter-dropdown-btn span');
+                btnText.textContent = item.textContent;
+                dropdown.classList.remove('active');
+            }
+
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.filter-dropdown')) {
+                    document.querySelectorAll('.filter-dropdown').forEach(d => d.classList.remove('active'));
+                }
+            });
+        </script>
         <div class="section3-menu">
             <div class="title">Menu</div>
             <div class="show-card">

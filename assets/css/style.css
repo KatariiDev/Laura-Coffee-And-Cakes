@@ -549,7 +549,7 @@ main {
     justify-content: space-between;
     align-items: center;
     /* gap: 24px; */
-    max-width: 165px;
+    max-width: 140px;
     width: 100%;
 }
 
@@ -557,7 +557,7 @@ main {
     border: 3px solid #FFD28F;
     color: #FFD28F;
     border-radius: 8px;
-    padding: 4px 17px;
+    padding: 4px 15px;
 }
 
 .row3__cart {

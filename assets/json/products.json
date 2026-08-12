@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1,
+        "name": "Black Coffee",
+        "category": "Coffee",
+        "price": "35000đ",
+        "s_description": "Bold Vietnamese iced dark coffee.",
+        "l_description": "Traditional Vietnamese dark drip coffee brewed from high-quality Robusta beans, serving a storng and bold flavor profile over ice or"
+    },
+    {
+        "id": 2,
+        "name": "Condensed Milk Coffee",
+        "category": "Coffee",
+        "price": "39000đ",
+        "s_description": "Traditional sweet iced milk coffee.",
+        "l_description": "A classic Vietnamese favorite combining intense drip coffee with rich, sweet condensed milk over crushed ice for a perfectly balanced bold and sweet taste."
+    },
+    {
+        "id": 3,
+        "name": "Bac Xiu",
+        "category": "Coffee",
+        "price": "39000đ",
+        "s_description": "Sweet, milk-forward iced coffee.",
+        "l_description": "A popular Saigon-style beverage that is heavily milk-forward, layered with plenty of sweetened milk and finished with a delicate dash of rich coffee."
+    },
+    {
+        "id": 4,
+        "name": "Espresso",
+        "category": "Coffee",
+        "price": "4000đ",
+        "s_description": "Pure, rich concentrated coffee shot.",
+        "l_description": "A single concentrated shot of pure coffee brewed under high pressure, boasting a rich aroma and a thick, velvety layer of golden crema on top."
+    },
+    {
+        "id": 5,
+        "name": "Cappuccino",
+        "category": "Coffee",
+        "price": "39000đ",
+        "s_description": "Espresso with thick milk foam.",
+        "l_description": "An Italian classic featuring a rich shot of espresso topped with equal parts of smoothly steamed milk and a thick, luxurious layer of milk foam."
+    },
+    {
+        "id": 6,
+        "name": "Latte",
+        "category": "Coffee",
+        "price": "55000đ",
+        "s_description": "Smooth espresso with steamed milk.",
+        "l_description": "A smooth and creamy coffee blend consisting of a shot of espresso combined with plenty of steamed milk and topped with a very light layer of foam."
+    },
+    {
+        "id": 7,
+        "name": "Americano",
+        "category": "Coffee",
+        "price": "45000đ",
+        "s_description": "Classic diluted black espresso coffee.",
+        "l_description": "A smooth, classic black coffee style prepared by diluting a rich shot of espresso with hot water, retaining the depth of flavor with a lighter body."
+    },
+    {
+        "id": 8,
+        "name": "Mocha",
+        "category": "Coffee",
+        "price": "59000đ",
+        "s_description": "Espresso with sweet chocolate milk.",
+        "l_description": "A delicious and comforting blend of rich espresso, smoothly steamed milk, and premium sweet chocolate sauce, topped with a light layer of foam."
+    },
+    {
+        "id": 9,
+        "name": "Salted Cream Coffee",
+        "category": "Coffee",
+        "price": "39000đ",
+        "s_description": "Coffee topped with savory cream.",
+        "l_description": "A modern trendy drink pairing traditional bold Vietnamese coffee with a velvety, savory-sweet layer of whipped salted cream floating on top."
+    },
+    {
+        "id": 10,
+        "name": "Egg Coffee",
+        "category": "Coffee",
+        "price": "45000đ",
+        "s_description": "Coffee with sweet egg custard.",
+        "l_description": "A famous Hanoi specialty featuring hot, robust coffee topped with a rich, creamy, and sweet custard made from freshly whipped egg yolks and condensed milk."
+    },
+    {
+        "id": 11,
+        "name": "Matcha Freeze",
+        "category": "Ice Blended",
+        "price": "59000đ",
+        "s_description": "Blended green tea with cream.",
+        "l_description": "Premium Japanese matcha green tea blended with ice and milk, topped with a generous swirl of whipped cream and chewy matcha jelly cubes."
+    },
+    {
+        "id": 12,
+        "name": "Phin Coffee Freeze",
+        "category": "Ice Blended",
+        "price": "55000đ",
+        "s_description": "Blended coffee with coffee jelly.",
+        "l_description": "Traditional Vietnamese Phin coffee blended smoothly with ice, served with satisfyingly chewy coffee jelly and topped with rich whipped cream."
+    },
+    {
+        "id": 13,
+        "name": "Passion Fruit Ice Blended",
+        "category": "Ice Blended",
+        "price": "55000đ",
+        "s_description": "Tangy, refreshing passion fruit syrup blended with ice.",
+        "l_description": "A refreshing summer treat made from tangy, tropical passion fruit puree blended seamlessly with ice for a perfect balance of sweet and sour notes."
+    },
+    {
+        "id": 14,
+        "name": "Peach Tea with Lemongrass",
+        "category": "Tea",
+        "price": "55000đ",
+        "s_description": "Black tea with lemongrass and peach slices.",
+        "l_description": "A highly refreshing signature black tea infused with aromatic fresh lemongrass, sweetened with peach syrup, and served with real, crunchy peach slices."
+    },
+    {
+        "id": 15,
+        "name": "Lotus Seed Tea",
+        "category": "Tea",
+        "price": "55000đ",
+        "s_description": "Fragrant tea served with sweet, crunchy lotus seeds.",
+        "l_description": "A delicate and refreshing tea infused with the elegant aroma of lotus, topped with sweet, soft-crunchy lotus seeds and chewy grass jelly."
+    },
+    {
+        "id": 16,
+        "name": "Oolong Milk Tea",
+        "category": "Milk Tea",
+        "price": "55000đ",
+        "s_description": "Creamy milk tea with a rich roasted oolong aroma.",
+        "l_description": "A smooth beverage crafted from premium roasted oolong tea leaves blended with rich milk cream, delivering a deep, roasted aftertaste."
+    },
+    {
+        "id": 17,
+        "name": "Kumquat Jasmine Tea",
+        "category": "Tea",
+        "price": "45000đ",
+        "s_description": "Fragrant jasmine green tea with tangy kumquat juice.",
+        "l_description": "A thirst-quenching iced tea combining floral jasmine green tea with freshly squeezed tropical kumquat juice and a hint of sweet syrup."
+    },
+    {
+        "id": 18,
+        "name": "Fresh Pineapple Juice",
+        "category": "Juice",
+        "price": "45000đ",
+        "s_description": "Sweet and tangy freshly pressed pineapple juice.",
+        "l_description": "A bright, tropical drink made from 100% freshly pressed ripe pineapples, served chilled over ice for a natural dose of vitamins."
+    },
+    {
+        "id": 19,
+        "name": "Blue Ocean Soda",
+        "category": "Soda",
+        "price": "45000đ",
+        "s_description": "Vibrant blue curacao soda with a splash of lime.",
+        "l_description": "A eye-catching, fizzy Italian soda mixed with citrusy Blue Curacao syrup and fresh lime juice, creating a highly refreshing and cooling drink."
+    },
+    {
+        "id": 20,
+        "name": "Matcha Latte",
+        "category": "Tea",
+        "price": "55000đ",
+        "s_description": "Creamy steamed milk with premium Japanese matcha.",
+        "l_description": "A comforting beverage made by whisking authentic Japanese matcha green tea powder with rich, smoothly steamed milk, available hot or iced."
+    },
+    {
+        "id": 21,
+        "name": "Laura Coffee Nam Linh Chi",
+        "category": "Coffee",
+        "price": "100000đ",
+        "s_description": "",
+        "l_description": ""
+    },
+    {
+        "id": 22,
+        "name": "Laura Coffee Dong Trung Ha Thao",
+        "category": "Coffee",
+        "price": "100000đ",
+        "s_description": "",
+        "l_description": ""
+    },
+    {
+        "id": 23,
+        "name": "Butter Croissant",
+        "category": "Pastry",
+        "price": "35000đ",
+        "s_description": "Flaky, golden French pastry with rich butter flavor.",
+        "l_description": "A classic French crescent-shaped pastry baked to golden perfection, featuring thin, flaky layers with a rich and aromatic butter taste."
+    },
+    {
+        "id": 24,
+        "name": "Chocolate Croissant",
+        "category": "Pastry",
+        "price": "39000đ",
+        "s_description": "Flaky buttery pastry filled with sweet dark chocolate.",
+        "l_description": "Traditional Pain au Chocolat made with buttery laminated dough wrapped around a core of rich, premium dark chocolate bars."
+    },
+    {
+        "id": 25,
+        "name": "Tiramisu",
+        "category": "Cake",
+        "price": "45000đ",
+        "s_description": "Classic Italian coffee-flavored dessert cake.",
+        "l_description": "An elegant Italian dessert featuring layers of espresso-soaked ladyfingers and a velvety, rich mascarpone cream, dusted with premium cocoa powder."
+    },
+    {
+        "id": 26,
+        "name": "New York Cheesecake",
+        "category": "Cake",
+        "price": "49000đ",
+        "s_description": "Rich, dense, and creamy vanilla cheesecake.",
+        "l_description": "A classic dense and smooth cream cheese cake baked on a sweet graham cracker crust, delivering a perfect balance of sweet and tangy flavors."
+    },
+    {
+        "id": 27,
+        "name": "Green Tea Mousse",
+        "category": "Cake",
+        "price": "45000đ",
+        "s_description": "Light and airy mousse cake with Japanese matcha.",
+        "l_description": "A delicate and feather-light dessert layering fluffy sponge cake with a smooth, vibrant mousse made from authentic Japanese matcha green tea."
+    },
+    {
+        "id": 28,
+        "name": "Red Velvet Cake",
+        "category": "Cake",
+        "price": "45000đ",
+        "s_description": "Vibrant red cocoa cake with smooth cream cheese.",
+        "l_description": "A striking and elegant layered cake with a soft cocoa flavor and a signature crimson color, frosted with a rich, tangy cream cheese icing."
+    },
+    {
+        "id": 29,
+        "name": "Salted Egg Sponge Cake",
+        "category": "Savory",
+        "price": "39000đ",
+        "s_description": "Soft sponge cake with savory salted egg and pork floss.",
+        "l_description": "A popular Vietnamese savory-sweet treat featuring a fluffy sponge cake base topped with rich salted egg yolks, savory pork floss, and a creamy sauce."
+    },
+    {
+        "id": 30,
+        "name": "Almond Danish",
+        "category": "Pastry",
+        "price": "39000đ",
+        "s_description": "Sweet flaky pastry topped with toasted sliced almonds.",
+        "l_description": "A puff pastry ring filled with sweet frangipane almond cream, baked until crisp and decorated with a generous crunch of toasted sliced almonds."
+    },
+    {
+        "id": 31,
+        "name": "Garlic Butter Bread",
+        "category": "Savory",
+        "price": "35000đ",
+        "s_description": "Toasted bread soaked in rich garlic butter and herbs.",
+        "l_description": "A comforting savory snack made from freshly baked bun scored and soaked in an aromatic blend of melted butter, minced garlic, and sweet parsley herbs."
+    },
+    {
+        "id": 32,
+        "name": "Chocolate Brownie",
+        "category": "Cake",
+        "price": "39000đ",
+        "s_description": "Dense, fudgy chocolate square with a crinkly top.",
+        "l_description": "A rich and decadent baked chocolate dessert with a dense, fudgy interior, loaded with chocolate chunks and finished with a classic crinkly crust."
+    }
+]

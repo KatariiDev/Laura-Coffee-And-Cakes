@@ -24,7 +24,7 @@
                     <img src="/assets/img/logo_coffe.svg" alt="">
                 </div>
                 <div class="nav">
-                    <a>Home</a>
+                    <a href="../../index.html">Home</a>
                     <a class="active">Menu</a>
                     <a href="about.html">About us</a>
                 </div>
@@ -61,9 +61,7 @@
                 <div class="filter-dropdown" id="filterProductType">
                     <button class="filter-dropdown-btn" onclick="toggleDropdown('filterProductType')">
                         <span>Product type</span>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#9F9F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <i data-lucide="chevron-down"></i>
                     </button>
                     <div class="filter-dropdown-menu">
                         <div class="filter-dropdown-item" onclick="selectFilter(this)">Coffee</div>
@@ -76,9 +74,7 @@
                 <div class="filter-dropdown" id="filterCategory">
                     <button class="filter-dropdown-btn" onclick="toggleDropdown('filterCategory')">
                         <span>Category</span>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#9F9F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <i data-lucide="chevron-down"></i>
                     </button>
                     <div class="filter-dropdown-menu">
                         <div class="filter-dropdown-item" onclick="selectFilter(this)">Hot</div>
@@ -90,9 +86,7 @@
                 <div class="filter-dropdown" id="filterPriceRange">
                     <button class="filter-dropdown-btn" onclick="toggleDropdown('filterPriceRange')">
                         <span>Price range</span>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#9F9F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <i data-lucide="chevron-down"></i>
                     </button>
                     <div class="filter-dropdown-menu">
                         <div class="filter-dropdown-item" onclick="selectFilter(this)">Under 20K</div>
@@ -105,9 +99,7 @@
                 <div class="filter-dropdown" id="filterEvaluate">
                     <button class="filter-dropdown-btn" onclick="toggleDropdown('filterEvaluate')">
                         <span>Evaluate</span>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#9F9F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <i data-lucide="chevron-down"></i>
                     </button>
                     <div class="filter-dropdown-menu">
                         <div class="filter-dropdown-item" onclick="selectFilter(this)">5 stars</div>
@@ -117,29 +109,6 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            function toggleDropdown(id) {
-                const allDropdowns = document.querySelectorAll('.filter-dropdown');
-                allDropdowns.forEach(d => {
-                    if (d.id !== id) d.classList.remove('active');
-                });
-                document.getElementById(id).classList.toggle('active');
-            }
-
-            function selectFilter(item) {
-                const dropdown = item.closest('.filter-dropdown');
-                const btnText = dropdown.querySelector('.filter-dropdown-btn span');
-                btnText.textContent = item.textContent;
-                dropdown.classList.remove('active');
-            }
-
-            document.addEventListener('click', function(e) {
-                if (!e.target.closest('.filter-dropdown')) {
-                    document.querySelectorAll('.filter-dropdown').forEach(d => d.classList.remove('active'));
-                }
-            });
-        </script>
         <div class="section3-menu">
             <div class="title">Menu</div>
             <div class="show-card">
@@ -157,7 +126,217 @@
                             <p>Hot Milk with less sugar</p>
                         </div>
                         <div class="product-right">
-                            <span class="price" id="price">12 K</span>
+                            <span class="price" id="price">1 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">2 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">3 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">4 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">5 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">6 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">7 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">8 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">9 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">10 K</span>
+                            <button class="cart-btn" id="cartButton">
+                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
+                        <div class="rating">
+                            <span>4.8</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <h3>Hot Milk</h3>
+                            <p>Hot Milk with less sugar</p>
+                        </div>
+                        <div class="product-right">
+                            <span class="price" id="price">11 K</span>
                             <button class="cart-btn" id="cartButton">
                                 <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
                             </button>
@@ -199,7 +378,7 @@
                             <p>Hot Milk with less sugar</p>
                         </div>
                         <div class="product-right">
-                            <span class="price" id="price">12 K</span>
+                            <span class="price" id="price">13 K</span>
                             <button class="cart-btn" id="cartButton">
                                 <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
                             </button>
@@ -220,70 +399,7 @@
                             <p>Hot Milk with less sugar</p>
                         </div>
                         <div class="product-right">
-                            <span class="price" id="price">12 K</span>
-                            <button class="cart-btn" id="cartButton">
-                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
-                        <div class="rating">
-                            <span>4.8</span>
-                            <span class="star">★</span>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-text">
-                            <h3>Hot Milk</h3>
-                            <p>Hot Milk with less sugar</p>
-                        </div>
-                        <div class="product-right">
-                            <span class="price" id="price">12 K</span>
-                            <button class="cart-btn" id="cartButton">
-                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
-                        <div class="rating">
-                            <span>4.8</span>
-                            <span class="star">★</span>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-text">
-                            <h3>Hot Milk</h3>
-                            <p>Hot Milk with less sugar</p>
-                        </div>
-                        <div class="product-right">
-                            <span class="price" id="price">12 K</span>
-                            <button class="cart-btn" id="cartButton">
-                                <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="/assets/img/icon-section3/img_product.png" alt="Hot Milk">
-                        <div class="rating">
-                            <span>4.8</span>
-                            <span class="star">★</span>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-text">
-                            <h3>Hot Milk</h3>
-                            <p>Hot Milk with less sugar</p>
-                        </div>
-                        <div class="product-right">
-                            <span class="price" id="price">12 K</span>
+                            <span class="price" id="price">14 K</span>
                             <button class="cart-btn" id="cartButton">
                                 <img src="/assets/img/icon-section3/Group (1) 1.svg" alt="">
                             </button>
@@ -291,11 +407,11 @@
                     </div>
                 </div>
             </div>
-            <div class="arrow">
-                <div class="page-number active">1</div>
-                <div class="page-number">2</div>
-                <div class="page-number">3</div>
-                <div class="page-number">Next</div>
+            <div class="arrow" id="pagination">
+                <button class="page-number active" onclick="changePage(1)">1</button>
+                <button class="page-number">2</button>
+                <button class="page-number">3</button>
+                <button class="page-number">Next</button>
             </div>
         </div>
         <div class="section4-support">
@@ -311,24 +427,77 @@
                 </div>
                 <div class="item">
                     <div class="icon">
-                        <img src="/assets/img/icon-section4/trophy 1.svg" alt="">
+                        <img src="/assets/img/icon-section4/shipping.svg" alt="">
                     </div>
                     <div class="descript">
-                        <div class="title">High Quality</div>
-                        <div class="infor">crafted from top materials</div>
+                        <div class="title">Free Shipping</div>
+                        <div class="infor">Order over 150 $</div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="icon">
-                        <img src="/assets/img/icon-section4/trophy 1.svg" alt="">
+                        <img src="/assets/img/icon-section4/customer-support.svg" alt="">
                     </div>
                     <div class="descript">
-                        <div class="title">High Quality</div>
-                        <div class="infor">crafted from top materials</div>
+                        <div class="title">24 / 7 Support</div>
+                        <div class="infor">Dedicated support</div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+        <footer>
+        <div class="f-container">
+            <div class="f-container-ch">
+                <section class="f-container__section">
+                    <div class="f-section__box">
+                        <div class="f-section__box--band">Laura Coffee</div>
+                        <div class="f-section__box--address poppins-regular">
+                            12 Nguyen Van Bao, Hanh Thong Ward, Go Vap District, Ho Chi Minh City
+                        </div>
+                    </div>
+                    <div class="f-section__box">
+                        <div class="f-section__col">
+                            <div class="f-section__box--content">Links</div>
+                            <div class="f-section__box--nav">
+                                <a href="../../index.html" class="f-option">Home</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="/assets/pages/menu.html" class="f-option">Menu</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="/assets/pages/about.html" class="f-option">About us</a>
+                            </div>
+                        </div>
+                        <div class="f-section__col">
+                            <div class="f-section__box--content">Help</div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="f-option">Payment Options</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="f-option">Returns</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="f-option">Privacy Policies</a>
+                            </div>
+                        </div>
+                        <div class="f-section__col">
+                            <div class="f-section__box--content f-option">Newsietter</div>
+                            <div class="f-section__box--input">
+                                <input class="poppins-regular" type="text" placeholder="Enter Your Email Address">
+                                <input class="poppins-semibold" type="button" value="SUBCRIBE">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="f-container__section poppins-regular">
+                    2026 Laura Coffee. All rights reverved
+                </section>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/assets/js/menu.js"></script>
 </body>
 </html>

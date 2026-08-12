@@ -112,6 +112,12 @@ header {
 .h-container__nav-title > a {
     text-decoration: none;
     color: var(--secondary-color);
+    transition: 0.2s ease;
+}
+
+.h-container__nav-title > a:hover {
+    border-bottom: 3px solid var(--primary-color);
+    color: var(--primary-color)
 }
 
 .h-container__nav-title:nth-child(1) > a {
@@ -266,6 +272,11 @@ header {
     color: white;
     gap: 10px;
     cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.h-container__content--btn > a > button:hover {
+    border: 5px solid var(--primary-color);
 }
 
 .h-btn__icon {
@@ -549,6 +560,14 @@ main {
     align-items: center;
     /* margin-right: 18px; */
     border: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.row3__cart:hover {
+    border: 3px solid var(--secondary-color);
+    width: 50px;
+    height: 50px;
 }
 
 /* Main Section 2 */

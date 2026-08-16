@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/assets/css/product-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Cà phê kem - Laura Coffee And Cakes</title>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="header">
+                <div class="logo">
+                    <img src="/assets/img/logo_coffe.svg" alt="Laura Coffee">
+                </div>
+                <div class="nav">
+                    <a href="../../index.html">Home</a>
+                    <a href="menu.html" class="active">Menu</a>
+                    <a href="about.html">About us</a>
+                </div>
+                <div class="action">
+                    <div class="search">
+                        <img src="/assets/img/akar-icons_search.png" alt="Search">
+                        <input type="text" placeholder="Cappuchino">
+                    </div>
+                    <div class="user">
+                        <img src="/assets/img/image 2.png" alt="User">
+                    </div>
+                    <div class="cart">
+                        <img src="/assets/img/icons_cart.png" alt="Cart">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            Trang chủ &gt; Menu &gt; <span class="active">Cà phê kem</span>
+        </div>
+
+        <section class="product-section">
+            <div class="gallery">
+                <div class="main-img-container">
+                    <div class="rating-badge">
+                        4.8
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                        </svg>
+                    </div>
+                    <div class="heart-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
+                    </div>
+                    <button class="nav-arrow left">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="nav-arrow right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="thumbnails" id="thumbnails-container">
+                    <div class="thumbnail active" onclick="selectThumbnail(this)"></div>
+                    <div class="thumbnail" onclick="selectThumbnail(this)"></div>
+                    <div class="thumbnail" onclick="selectThumbnail(this)"></div>
+                    <div class="thumbnail" onclick="selectThumbnail(this)"></div>
+                    <div class="thumbnail" onclick="selectThumbnail(this)"></div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-name">Cà phê kem</h1>
+                <div class="rating-row">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <span style="font-weight: 600;">4.8</span>
+                    <span class="review-count">(128 đánh giá)</span>
+                </div>
+                <div class="price">18.000 đ</div>
+                <section class="bottom-section">
+                    <div class="tabs-section">
+                        <div class="tabs">
+                            <div class="tab active" onclick="switchTab('description', this)">Mô tả</div>
+                            <div class="tab" onclick="switchTab('ingredients', this)">Thành phần</div>
+                            <div class="tab" onclick="switchTab('guide', this)">Hướng dẫn sử dụng</div>
+                        </div>
+                        <div class="tab-content" id="tab-content">
+                            Cà phê kem là sự kết hợp hoàn hảo giữa vị đắng nhẹ của cà phê và vị béo ngọt của kem tươi,
+                            mang đến trải nghiệm thưởng thức cân bằng và đầy cuốn hút. Thích hợp để bắt đầu ngày mới
+                            hoặc thư giãn vào buổi chiều.
+                        </div>
+                    </div>
+                </section>
+                <div class="size-selector">
+                    <div class="size-label">Size</div>
+                    <div class="size-options">
+                        <div class="size-option" onclick="selectSize(this)">
+                            <div class="size-name">Nhỏ</div>
+                            <div class="size-price">12.000 đ</div>
+                        </div>
+                        <div class="size-option active" onclick="selectSize(this)">
+                            <div class="size-name">Vừa</div>
+                            <div class="size-price">18.000 đ</div>
+                        </div>
+                        <div class="size-option" onclick="selectSize(this)">
+                            <div class="size-name">Lớn</div>
+                            <div class="size-price">22.000 đ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quantity-section">
+                    <div class="quantity-label">Số lượng</div>
+                    <div class="cta-row">
+                        <div class="quantity-controls">
+                            <button class="qty-btn" onclick="updateQty(-1)">-</button>
+                            <input type="text" id="qty-input" class="qty-input" value="1" readonly>
+                            <button class="qty-btn" onclick="updateQty(1)">+</button>
+                        </div>
+                        <button class="cta-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+
+                <div class="feature-badges">
+                    <div class="feature-badge">
+                        <i data-lucide="truck"></i>
+                        <div>
+                            <div class="badge-title">Giao hàng nhanh</div>
+                            <div class="badge-subtitle">(30-45 phút)</div>
+                        </div>
+                    </div>
+                    <div class="feature-badge">
+                        <i data-lucide="undo-2"></i>
+                        <div>
+                            <div class="badge-title">Đổi trả dễ dàng</div>
+                            <div class="badge-subtitle">(Trong 24h)</div>
+                        </div>
+                    </div>
+                    <div class="feature-badge">
+                        <i data-lucide="circle-check-big"></i>
+                        <div>
+                            <div class="badge-title">Nguyên liệu chất lượng</div>
+                            <div class="badge-subtitle">(An toàn vệ sinh)</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="f-container">
+            <div class="f-container-ch">
+                <section class="f-container__section">
+                    <div class="f-section__box">
+                        <div class="f-section__box--band">Laura Coffee</div>
+                        <div class="f-section__box--address poppins-regular">
+                            12 Nguyen Van Bao, Hanh Thong Ward, Go Vap District, Ho Chi Minh City
+                        </div>
+                    </div>
+                    <div class="f-section__box">
+                        <div class="f-section__col">
+                            <div class="f-section__box--content">Links</div>
+                            <div class="f-section__box--nav">
+                                <a href="../../index.html" class="f-option">Home</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="/assets/pages/menu.html" class="f-option">Menu</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="/assets/pages/about.html" class="f-option">About us</a>
+                            </div>
+                        </div>
+                        <div class="f-section__col">
+                            <div class="f-section__box--content">Help</div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="f-option">Payment Options</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="f-option">Returns</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="f-option">Privacy Policies</a>
+                            </div>
+                        </div>
+                        <div class="f-section__col">
+                            <div class="f-section__box--content f-option">Newsietter</div>
+                            <div class="f-section__box--input">
+                                <input class="poppins-regular" type="text" placeholder="Enter Your Email Address">
+                                <input class="poppins-semibold" type="button" value="SUBCRIBE">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="f-container__section poppins-regular">
+                    2026 Laura Coffee. All rights reverved
+                </section>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/assets/js/product-detail.js"></script>
+</body>
+
+</html>

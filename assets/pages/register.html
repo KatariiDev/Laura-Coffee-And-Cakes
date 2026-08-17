@@ -35,13 +35,13 @@
 
     <div class="register-card">
       <h1>Register</h1>
-      <form>
-        <input class="container" type="text" placeholder="Username" required>
-        <input class="container" type="email" placeholder="Email (example@gmail.com)" required>
-        <input class="container" type="password" placeholder="Password" required>
-        <input class="container" type="password" placeholder="Re-enter Password" required>
-        <input class="container" type="tel" placeholder="Phone Number" required>
-        <input class="container" type="text" placeholder="Address" required>
+      <form id="register-form">
+        <input id="register-username" class="container" type="text" placeholder="Username" required>
+        <input id="register-email" class="container" type="email" placeholder="Email (example@gmail.com)" required>
+        <input id="register-password" class="container" type="password" placeholder="Password" required>
+        <input id="register-repw" class="container" type="password" placeholder="Re-enter Password" required>
+        <input id="register-phone" class="container" type="tel" placeholder="Phone Number" required>
+        <input id="register-address" class="container" type="text" placeholder="Address" required>
         <button class="container-register" type="submit">Register</button>
       </form>
       <a href="../pages/sign-in.html" class="have-account">Have an account? Sign in</a>
@@ -85,7 +85,9 @@
  
     <div class="footer-bottom">2026 Laura Coffee. All rights reserved</div>
   </footer>
- 
- 
+
+  <script src="../js/verify-data.js"></script>
+  <script src="../js/register.js"></script>
 </body>
+
 </html>

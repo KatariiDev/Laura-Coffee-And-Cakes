@@ -97,7 +97,7 @@
     },
     {
         "id": 13,
-        "name": "Passion Fruit Ice Blended",
+        "name": "Passion Fruit Ice",
         "category": "Ice Blended",
         "price": "55000đ",
         "s_description": "Tangy, refreshing passion fruit syrup blended with ice.",
@@ -105,7 +105,7 @@
     },
     {
         "id": 14,
-        "name": "Peach Tea with Lemongrass",
+        "name": "Peach Tea",
         "category": "Tea",
         "price": "55000đ",
         "s_description": "Black tea with lemongrass and peach slices.",
@@ -121,7 +121,7 @@
     },
     {
         "id": 16,
-        "name": "Oolong Milk Tea",
+        "name": "Oolong Tea",
         "category": "Milk Tea",
         "price": "55000đ",
         "s_description": "Creamy milk tea with a rich roasted oolong aroma.",
@@ -129,11 +129,11 @@
     },
     {
         "id": 17,
-        "name": "Kumquat Jasmine Tea",
+        "name": "Kumquat Jasmine",
         "category": "Tea",
         "price": "45000đ",
         "s_description": "Fragrant jasmine green tea with tangy kumquat juice.",
-        "l_description": "A thirst-quenching iced tea combining floral jasmine green tea with freshly squeezed tropical kumquat juice and a hint of sweet syrup."
+        "l_description": "A thirst-quenching iced tea combining floral jasmine green tea with freshly squeezed tropical."
     },
     {
         "id": 18,

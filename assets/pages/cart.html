@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Cart - Laura Coffee And Cakes</title>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="header">
+                <div class="logo">
+                    <img src="/assets/img/logo_coffe.svg" alt="Laura Coffee">
+                </div>
+                <div class="nav">
+                    <a href="../../index.html">Home</a>
+                    <a href="menu.html" class="active">Menu</a>
+                    <a href="about.html">About us</a>
+                </div>
+                <div class="action">
+                    <div class="search">
+                        <img src="/assets/img/akar-icons_search.png" alt="Search">
+                        <input type="text" placeholder="Cappuchino">
+                    </div>
+                    <div class="user">
+                        <img src="/assets/img/image 2.png" alt="User">
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <img src="/assets/img/icons_cart.png" alt="Cart">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../../index.html">Home</a> &gt;
+            <span class="active">Cart</span>
+        </div>
+
+        <h1 class="page-title">Your Cart</h1>
+
+        <div class="cart-container">
+            <!-- Left: Cart items -->
+            <div class="cart-items">
+                <div class="cart-header">
+                    <span>Product</span>
+                    <span>Unit Price</span>
+                    <span>Quantity</span>
+                    <span>Subtotal</span>
+                    <span></span>
+                </div>
+
+                <div id="cart-list">
+                    <!-- JS will render here -->
+                </div>
+
+                <div class="cart-actions">
+                    <a href="menu.html" class="continue-shopping">← Continue Shopping</a>
+                    <button class="clear-cart-btn" id="clear-cart-btn">Clear All</button>
+                </div>
+            </div>
+
+            <!-- Right: Order summary -->
+            <div class="order-summary">
+                <div class="summary-title">Order Summary</div>
+
+                <div class="summary-row">
+                    <span class="label" id="subtotal-label">Subtotal (0 items)</span>
+                    <span id="subtotal-price">0 đ</span>
+                </div>
+                <div class="summary-row">
+                    <span class="label">Shipping Fee</span>
+                    <span id="shipping-fee">20.000 đ</span>
+                </div>
+
+                <hr class="summary-divider">
+
+                <div class="summary-total">
+                    <span class="total-label">Total</span>
+                    <span class="total-price" id="total-price">0 đ</span>
+                </div>
+
+                <button class="checkout-btn" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f-container">
+            <div class="f-container-ch">
+                <section class="f-container__section">
+                    <div class="f-section__box">
+                        <div class="f-section__box--band">Laura Coffee</div>
+                        <div class="f-section__box--address poppins-regular">
+                            12 Nguyen Van Bao, Hanh Thong Ward, Go Vap District, Ho Chi Minh City
+                        </div>
+                    </div>
+                    <div class="f-section__box">
+                        <div class="f-section__col">
+                            <div class="f-section__box--content">Links</div>
+                            <div class="f-section__box--nav">
+                                <a href="../../index.html" class="f-option">Home</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="/assets/pages/menu.html" class="f-option">Menu</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="/assets/pages/about.html" class="f-option">About us</a>
+                            </div>
+                        </div>
+                        <div class="f-section__col">
+                            <div class="f-section__box--content">Help</div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="f-option">Payment Options</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="f-option">Returns</a>
+                            </div>
+                            <div class="f-section__box--nav">
+                                <a href="#" class="f-option">Privacy Policies</a>
+                            </div>
+                        </div>
+                        <div class="f-section__col">
+                            <div class="f-section__box--content f-option">Newsletter</div>
+                            <div class="f-section__box--input">
+                                <input class="poppins-regular" type="text" placeholder="Enter Your Email Address">
+                                <input class="poppins-semibold" type="button" value="SUBSCRIBE">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="f-container__section poppins-regular">
+                    2026 Laura Coffee. All rights reserved
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/cart.js"></script>
+</body>
+
+</html>

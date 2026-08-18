@@ -42,14 +42,30 @@
                     <input type="text" placeholder="Cappuccino" class="poppins-regular" id="search-input">
                     <div id="search-results" class="search-results"></div>
                 </div>
-                <div class="h-container__util--account">
-                    <a href="./assets/pages/sign-in.html">
-                        <img src="./assets/img/home/account.png" alt="" class="account">
+                <div class="h-container__util--account" id="account-container">
+                    <a href="./assets/pages/sign-in.html" id="account-link">
+                        <img src="./assets/img/home/account.png" alt="" class="account" id="account-icon">
                     </a>
+
+                    <div class="account-card" id="account-card">
+                        <img src="./assets/img/home/default-avt.jpg" alt="" class="account-avt">
+                        <div class="account-info">
+                            <p id="account-name"></p>
+                            <span id="account-email"></span>
+                        </div>
+                    </div>
+
+                    <div class="account-menu" id="account-menu">
+                        <a href="#" id="menu-info">Information</a>
+                        <hr>
+                        <a href="/assets/pages/cart.html" id="menu-cart">Cart</a>
+                        <hr>
+                        <button id="logout-btn">Log out</button>
+                    </div>
                 </div>
-                <div class="h-container__util--cart">
+                <div class="h-container__util--cart" id="cart">
                     <a href="#">
-                        <img src="./assets/img/home/cart.png" alt="" class="cart">
+                        <img src="./assets/img/home/cart.png" alt="" class="cart" id="cart-icon">
                     </a>
                 </div>
                 <div class="h-container__util--menu">
@@ -494,6 +510,9 @@
     </footer>    
 </body>
 
+<script src="./assets/js/cart-header.js"></script>
+<script src="./assets/js/search.js"></script>
 <script src="./assets/js/main.js"></script>
+<script src="./assets/js/account.js"></script>
 
 </html>

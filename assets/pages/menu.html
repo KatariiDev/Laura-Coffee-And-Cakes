@@ -31,14 +31,31 @@
                 <div class="action">
                     <div class="search">
                         <img src="/assets/img/akar-icons_search.png" alt="">
-                        <input type="text" placeholder="Cappuchino">
+                        <input type="text" placeholder="Cappuchino" id="search-input">
+                        <div id="search-results" class="search-results"></div>
                     </div>
-                    <div class="user">
-                        <img src="/assets/img/image 2.png" alt="">
+                    <div class="user" id="account-container">
+                        <a href="/assets/pages/sign-in.html" id="account-link">
+                            <img src="/assets/img/image 2.png" alt="" id="account-icon">
+                        </a>
+                        <div class="account-card" id="account-card">
+                            <img src="/assets/img/home/default-avt.jpg" alt="" class="account-avt">
+                            <div class="account-info">
+                                <p id="account-name"></p>
+                                <span id="account-email"></span>
+                            </div>
+                        </div>
+                        <div class="account-menu" id="account-menu">
+                            <a href="#" id="menu-info">Information</a>
+                            <hr>
+                            <a href="./assets/pages/cart.html" id="menu-cart">Cart</a>
+                            <hr>
+                            <button id="logout-btn">Log out</button>
+                        </div>
                     </div>
-                    <div class="cart">
-                        <a href="cart.html">
-                            <img src="/assets/img/icons_cart.png" alt="">
+                    <div class="cart" id="cart">
+                        <a href="#">
+                            <img src="/assets/img/icons_cart.png" alt="" id="cart-icon">
                         </a>
                     </div>
                 </div>
@@ -208,6 +225,9 @@
             </div>
         </div>
     </footer>
+    <script src="/assets/js/cart-header.js"></script>
+    <script src="/assets/js/account.js"></script>
+    <script src="../js/search.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="/assets/js/menu.js"></script>
 </body>

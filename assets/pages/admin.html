@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Laura Coffee</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dynalight&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Dynalight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+ 
+  <div class="admin">
+ 
+    <!-- Sidebar: nằm ngoài main, dùng aside + nav -->
+    <aside class="aside-bar">
+     <div class="logo">
+    <img src="../img/img-admin/logo_coffe.svg" alt="Laura Coffee">
+     </div>
+ 
+      <nav aria-label="colection">
+        <ul class="menu">
+          <li><a href="#" class="card-Dashboard">📊 Dashboard</a></li>
+          <li><a href="#">🧾 Orders</a></li>
+          <li><a href="#">☕ Products / Menu</a></li>
+          <li><a href="#">👥 Customers</a></li>
+          <li><a href="#">💰 Revenue / Reports</a></li>
+          <li><a href="#">⚙️ Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+ 
+    <div class="main">
+      <!-- header -->
+      <header class="top-bar">
+        <input type="text" placeholder="Cappuccino" aria-label="Search">
+ 
+        <div class="user">
+            <img src="../img/img-admin/avatar.svg" alt="Avatar">
+          <div>
+            <p><b>Admin</b></p>
+            <p class="people">admin@laura.com</p>
+          </div>
+        </div>
+      </header>
+ 
+      <div class="container">
+      <main>
+        <h1>Dashboard Overview</h1>
+        <p class="welcome">Welcome back, here is today's store overview.</p>
+ 
+        <section aria-label="Key statistics" class="stats">
+          <div class="box">
+            <div class="icon">💰</div>
+            <div>
+              <h2>2.450.000đ</h2>
+              <p>Today's Revenue</p>
+              <p class="up">▲ 12% vs yesterday</p>
+            </div>
+          </div>
+ 
+          <div class="box">
+            <div class="icon">🧾</div>
+            <div>
+              <h2>86</h2>
+              <p>New Orders</p>
+              <p class="up">▲ 8% vs yesterday</p>
+            </div>
+          </div>
+ 
+          <div class="box">
+            <div class="icon">👥</div>
+            <div>
+              <h2>14</h2>
+              <p>New Customers</p>
+              <p class="up">▲ 3% vs yesterday</p>
+            </div>
+          </div>
+ 
+          <div class="box">
+            <div class="icon">☕</div>
+            <div>
+              <h2>312</h2>
+              <p>Products Sold</p>
+              <p class="down">▼ 4% vs yesterday</p>
+            </div>
+          </div>
+        </section>
+ 
+        <div class="row">
+        <section class="h-container2">
+            <h3 id="revenue-title">Revenue (Last 7 Days)</h3>
+            <div class="chart">
+              <div class="col"><div class="bar" style="height:55%"></div><span>T2</span></div>
+              <div class="col"><div class="bar" style="height:70%"></div><span>T3</span></div>
+              <div class="col"><div class="bar" style="height:45%"></div><span>T4</span></div>
+              <div class="col"><div class="bar" style="height:80%"></div><span>T5</span></div>
+              <div class="col"><div class="bar" style="height:65%"></div><span>T6</span></div>
+              <div class="col"><div class="bar" style="height:95%"></div><span>T7</span></div>
+              <div class="col"><div class="bar" style="height:100%"></div><span>CN</span></div>
+            </div>
+          </section>
+ 
+          <section class="h-container2">
+            <h3 id="top-products-title">Top Selling Products</h3>
+            <ul class="products">
+             <li>
+                <img src="../img/img-admin/vanilla-latte.svg" alt="Vanilla Latte">
+                <div>
+                    <p>Vanilla Latte</p>
+                    <p class="gray">96 sold</p>
+                </div>
+                <b>2.016.000đ</b>
+                </li>
+              <li>
+                <img src="../img/img-admin/cappuccino.svg" alt="Cappuccino">
+                <div>
+                  <p>Cappuccino</p>
+                  <p class="gray">78 sold</p>
+                </div>
+                <b>936.000đ</b>
+              </li>
+              <li>
+                 <img src="../img/img-admin/espresso.svg" alt="Espresso">
+                <div>
+                  <p>Espresso</p>
+                  <p class="gray">64 sold</p>
+                </div>
+                <b>768.000đ</b>
+              </li>
+            </ul>
+          </section>
+        </div>
+ 
+        <section class="h-container2">
+          <h3 id="recent-orders-title">Recent Orders</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Status</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#LC1024</td>
+                <td>John Smith</td>
+                <td>Vanilla Latte x2</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>42.000đ</td>
+              </tr>
+              <tr>
+                <td>#LC1023</td>
+                <td>Emily Brown</td>
+                <td>Cappuccino x1</td>
+                <td><span class="status pending">Shipping</span></td>
+                <td>12.000đ</td>
+              </tr>
+              <tr>
+                <td>#LC1021</td>
+                <td>Sophia Nguyen</td>
+                <td>Hazelnut Latte x1</td>
+                <td><span class="status cancelled">Cancelled</span></td>
+                <td>23.000đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+  
